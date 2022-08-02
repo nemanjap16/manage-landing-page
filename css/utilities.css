@@ -1,0 +1,23 @@
+.bright-red {
+    color: var(--bright-red);
+}
+
+.dark-blue {
+    color: var(--dark-blue);
+}
+
+.dark-grayish-blue {
+    color: var(--dark-grayish-blue);
+}
+
+.very-dark-blue {
+    color: var(--very-dark-blue);
+}
+
+.very-pale-red {
+    color: var(--very-pale-red);
+}
+
+.very-light-gray {
+    color: var(--very-light-gray);
+}
