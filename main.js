@@ -1,1 +1,2 @@
-import "./css/utilities.css"
+import "./css/main.css"
+

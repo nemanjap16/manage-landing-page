@@ -1,3 +1,5 @@
+/* COLORS */
+
 .bright-red {
     color: var(--bright-red);
 }
@@ -20,4 +22,131 @@
 
 .very-light-gray {
     color: var(--very-light-gray);
+}
+
+.bg-bright-red {
+    background-color: var(--bright-red);
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.bg-dark-grayish-blue {
+    background-color: var(--dark-grayish-blue);
+}
+
+.bg-very-dark-blue {
+    background-color: var(--very-dark-blue);
+}
+
+.bg-very-pale-red {
+    background-color: var(--very-pale-red);
+}
+
+.bg-very-light-gray {
+    background-color: var(--very-light-gray);
+}
+
+/* DISPLAY */
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-base {
+    align-items: baseline;
+}
+
+/* FONT SIZES */
+
+.fs-1 {
+    font-size: var(--fs-1);
+}
+
+.fs-2 {
+    font-size: var(--fs-2);
+}
+
+.fs-3 {
+    font-size: var(--fs-3);
+}
+
+.fs-4 {
+    font-size: var(--fs-4);
+}
+
+.fs-5 {
+    font-size: var(--fs-5);
+}
+
+.fs-6 {
+    font-size: var(--fs-6);
+}
+
+/* FONT WEIGHT */
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+/* WIDTH */
+
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
 }

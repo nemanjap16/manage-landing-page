@@ -1,0 +1,52 @@
+@import url(utilities.css);
+@import url(button.css);
+
+body {
+    font-family: var(--ff-body);
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    font-family: var(--ff-heading);
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.subtitle {
+    font-family: var(--ff-heading);
+    color: var(--very-light-gray);
+    font-weight: 700;
+}
+
+.text {
+    color: red;
+}
+
+.hero {
+    padding: 50px 0;
+}
+
+.about {
+    padding: 50px 0;
+}
+
+.testimonials {
+    padding: 50px 0;
+}
+
+.get-started {
+    padding: 50px 0;
+}
+
+.footer {
+    padding: 50px 0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+}

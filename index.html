@@ -5,17 +5,148 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manage Landig Page</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merienda&family=Outfit:wght@300;400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=Lato:wght@100;300;400;700;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merienda&display=swap"
     rel="stylesheet">
+  <title>Manage Landig Page</title>
+  <link rel="stylesheet" href="global.css">
+
+
 </head>
 
 <body>
-  <p class="bright-red">Test</p>
+  <header class="header">
+    <div class="container flex justify-between">
+      <a href="#"><img src="/images/logo.svg" alt="Manage Agency"></a>
+      <nav class="main-nav">
+        <ul role="list" class="flex">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </nav>
+      <button class="btn">Get Started</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="flex container justify-between">
+        <div class="w-50">
+          <h1 class="title fs-6">Bring everyone together to build better products.</h1>
+          <p>Manage makes it simple for softwere teams to plan day-to-day plans while keeping the larger team goals in
+            view.</p>
+          <button class="btn" data-type="bright-red">Get Started</button>
+        </div>
+        <div class="w-50">
+          <img src="/images/illustration-intro.svg" alt="illustration">
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="flex container justify-between">
+        <div class="w-50">
+          <h2 class="title fs-5">What’s different about Manage?</h2>
+          <p>Manage provides all the functionality your team needs, without
+            the complexity. Our software is tailor-made for modern digital
+            product teams..</p>
+        </div>
+        <div class="flex-column w-50">
+          <div class="flex align-base">
+            <div>01</div>
+            <div>
+              <h3 class="title">Track company-wide progress</h3>
+              <p>
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture again.
+              </p>
+            </div>
+          </div>
+          <div class="flex align-base">
+            <div>02</div>
+            <div>
+              <h3 class="title">Advanced built-in reports</h3>
+              <p>
+                Set internal delivery estimates and track progress toward company
+                goals. Our customisable dashboard helps you build out the reports
+                you need to keep key stakeholders informed.
+              </p>
+            </div>
+          </div>
+          <div class="flex align-base">
+            <div>03</div>
+            <div>
+              <h3 class="title">Everything you need in one place</h3>
+              <p>
+                Stop jumping from one service to another to communicate, store files,
+                track tasks and share documents. Manage offers an all-in-one team
+                productivity solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container flex-column align-center">
+        <h2>What they’ve said</h2>
+        <!-- carousel -->
+        <button class="btn">Get Started</button>
+      </div>
+    </section>
+    <section class="get-started  bg-bright-red">
+      <div class="container flex">
+        <div class="w-50">
+          <p class="subtitle fs-5">Simplify how your team <br /> works today.</p>
+        </div>
+        <div class="w-50 flex align-center">
+          <button class="btn ml-auto" data-type="white">Get Started</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer bg-very-dark-blue very-light-gray">
+    <div class="container footer-nav">
+      <div class="flex-column">
+        <div>
+          <a href="#"><img src="/images/logo.svg" alt="Manage Agency"></a>
+        </div>
+        <ul class="flex" role="list" aria-label="social links">
+          <li><a aria-label="facebook" href="#"><img src="/images/icon-facebook.svg" alt="Facebook"></a></li>
+          <li><a aria-label="youtube" href="#"><img src="/images/icon-youtube.svg" alt="Youtube"></a></li>
+          <li><a aria-label="tweeter" href="#"><img src="/images/icon-twitter.svg" alt="Twitter"></a></li>
+          <li><a aria-label="pinterest" href="#"><img src="/images/icon-pinterest.svg" alt="Pinterest"></a></li>
+          <li><a aria-label="instagram" href="#"><img src="/images/icon-instagram.svg" alt="Instagram"></a></li>
+        </ul>
+      </div>
+      <div>
+        <ul role="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul role="list">
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <form action="#">
+          <input type="email" placeholder="Updates in your inbox…">
+          <button type="submit">Go</button>
+          <p>Copyright 2020. All Rights Reserved</p>
+        </form>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="/main.js"></script>
 </body>
 
