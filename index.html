@@ -18,10 +18,15 @@
 
 <body>
   <header class="header">
-    <div class="container flex justify-between">
+    <div class="container flex-nav justify-between align-center">
       <a href="#"><img src="/images/logo.svg" alt="Manage Agency"></a>
-      <nav class="main-nav">
-        <ul role="list" class="flex">
+      <button class="mobile-nav-button" aria-controls="primary-nav" aria-expanded="false">
+        <img class="hamburger" src="/images/icon-hamburger.svg" alt="Hamburger menu">
+        <!-- <img class="hamburger-close d-none" src="/images/icon-close.svg" alt="Close hamburger"> -->
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav">
+        <ul role="list" class="nav-items">
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">About Us</a></li>
@@ -29,7 +34,7 @@
           <li><a href="#">Community</a></li>
         </ul>
       </nav>
-      <button class="btn" data-type="bright-red">Get Started</button>
+      <button class="btn cta-nav" data-type="bright-red">Get Started</button>
     </div>
   </header>
   <main>

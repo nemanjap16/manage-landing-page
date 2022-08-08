@@ -26,6 +26,7 @@ ul li a {
     color: red;
 }
 
+/********** SECTIONS **********/
 .hero {
     padding: 50px 0;
 }
@@ -42,6 +43,102 @@ ul li a {
     padding: 50px 0;
 }
 
+/********** HEADER **********/
+.header {
+    padding-top: 45px;
+    display: flex;
+}
+
+.header[data-overlay]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0), rgb(0 0 0 / 0.5));
+
+}
+
+/********** MOBILE NAVIGATION **********/
+.primary-nav {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .primary-nav {
+        display: flex;
+    }
+}
+
+.primary-nav .nav-items {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.primary-nav .nav-items a:hover,
+.primary-nav .nav-items a:focus {
+    color: var(--bright-red);
+}
+
+@media (min-width: 900px) {
+    .primary-nav .nav-items {
+        flex-direction: row;
+    }
+
+    .nav-items {
+        display: block;
+    }
+
+    .primary-nav .nav-items a:hover,
+    .primary-nav .nav-items a:focus {
+        color: var(--dark-grayish-blue);
+    }
+}
+
+.cta-nav {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .cta-nav {
+        display: block;
+    }
+}
+
+.mobile-nav-button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    height: fit-content;
+    display: none;
+    z-index: 10;
+}
+
+@media (max-width: 900px) {
+    .mobile-nav-button {
+        display: block;
+    }
+}
+
+/* .mobile-nav-button .hamburger-close {
+    display: none;
+} */
+
+@media (min-width: 900px) {}
+
+.primary-nav[data-visible] {
+    background-color: white;
+    display: block;
+    position: absolute;
+    inset: 6rem 1rem auto;
+    border-radius: 4px;
+    padding: 40px 0;
+}
+
+
+
+/********** FOOTER **********/
 .footer {
     padding: 50px 0;
 }

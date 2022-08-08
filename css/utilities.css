@@ -57,6 +57,10 @@
     padding-inline: 1rem;
 }
 
+.d-none {
+    display: none;
+}
+
 @media (min-width: 1110px) {
     .container {
         padding-inline: 0;
@@ -72,6 +76,10 @@
     .flex {
         flex-direction: column;
     }
+}
+
+.flex-nav {
+    display: flex;
 }
 
 .flex-center {
@@ -101,6 +109,14 @@
 
 .align-base {
     align-items: baseline;
+}
+
+.align-end {
+    align-self: flex-end;
+}
+
+.align-start {
+    align-self: flex-start;
 }
 
 /* FONT SIZES */
