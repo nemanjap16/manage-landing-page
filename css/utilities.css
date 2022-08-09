@@ -1,4 +1,4 @@
-/* COLORS */
+/********** COLORS **********/
 
 .bright-red {
     color: var(--bright-red);
@@ -48,7 +48,7 @@
     background-color: var(--very-light-gray);
 }
 
-/* DISPLAY */
+/********** DISPLAY **********/
 
 .container {
     max-width: 1110px;
@@ -69,7 +69,7 @@
 
 .flex {
     display: flex;
-    flex-flow: wrap;
+    /* flex-flow: wrap; */
 }
 
 @media (max-width: 50em) {
@@ -177,13 +177,13 @@
     font-weight: 700;
 }
 
-/* WIDTH */
+/********** WIDTH **********/
 
 .w-50 {
     width: 50%;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 900px) {
     .w-50 {
         width: 100%;
     }
@@ -193,7 +193,11 @@
     width: 25%;
 }
 
-@media (max-width: 50em) {
+.text-w-10 {
+    max-width: 20ch;
+}
+
+@media (max-width: 900px) {
     .w-25 {
         width: 100%;
     }
@@ -206,3 +210,31 @@
 .mr-auto {
     margin-right: auto;
 }
+
+/********** BLOCK FLOW **********/
+
+/* where gives specificity of 0 */
+:where(.flow>*+*) {
+    margin-top: 10px;
+}
+
+:where(.flow-1>*+*) {
+    margin-top: 2em;
+}
+
+:where(.flow-2>*+*) {
+    margin-top: 3em;
+}
+
+:where(.flow-3>*+*) {
+    margin-top: 4em;
+}
+
+:where(.flow-4>*+*) {
+    margin-top: 6em;
+}
+
+/* second way - more readable */
+/* :where(.flow > :not(:first-child)) {
+    margin-top: 1rem;
+} */

@@ -2,7 +2,7 @@
     cursor: pointer;
     appearance: none;
     border: none;
-    outline: none;
+    /* outline: none; */
     padding: 12px 22px;
     border-radius: 36px;
     width: max-content;
@@ -30,4 +30,15 @@ button[data-type="bright-red"] {
 button[data-type="bright-red"]:hover,
 button[data-type="bright-red"]:focus-visible {
     background-color: hsla(12 88% 59% / 80%);
+}
+
+.simplify-btn {
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    .simplify-btn {
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }
