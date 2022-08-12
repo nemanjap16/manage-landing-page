@@ -18,7 +18,7 @@
 
 <body>
   <header class="header">
-    <div class="container flex-nav justify-between align-center">
+    <div class="container flex-wrap justify-between align-center">
       <a href="#"><img src="/images/logo.svg" alt="Manage Agency"></a>
       <button class="mobile-nav-button" aria-controls="primary-nav" aria-expanded="false">
         <img class="hamburger" src="/images/icon-hamburger.svg" alt="Hamburger menu">
@@ -117,39 +117,59 @@
   </main>
   <footer class="footer bg-very-dark-blue very-light-gray">
     <div class="container footer-nav">
-      <div class="flex-column">
+      <div class="footer-logo">
         <div>
-          <a href="#"><img src="/images/logo.svg" alt="Manage Agency"></a>
+          <a href="#" aria-label="home">
+            <svg class="manage-icon" width="146" height="24">
+              <use xlink:href="/images/manage-logo.svg#manage-logo"></use>
+            </svg>
+          </a>
         </div>
-        <ul class="flex" role="list" aria-label="social links">
-          <li><a aria-label="facebook" href="#"><img src="/images/icon-facebook.svg" alt="Facebook"></a></li>
-          <li><a aria-label="youtube" href="#"><img src="/images/icon-youtube.svg" alt="Youtube"></a></li>
-          <li><a aria-label="tweeter" href="#"><img src="/images/icon-twitter.svg" alt="Twitter"></a></li>
-          <li><a aria-label="pinterest" href="#"><img src="/images/icon-pinterest.svg" alt="Pinterest"></a></li>
-          <li><a aria-label="instagram" href="#"><img src="/images/icon-instagram.svg" alt="Instagram"></a></li>
+        <ul class="flex" role="list" data-list="social-networks" aria-label="social links">
+          <li><a aria-label="facebook" href="#"><svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-facebook"></use>
+              </svg></a></li>
+          <li><a aria-label="youtube" href="#"><svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-youtube"></use>
+              </svg></a></li>
+          <li><a aria-label="twitter" href="#"><svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-twitter"></use>
+              </svg></a></li>
+          <li><a aria-label="pinterest" href="#"><svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-pinterest"></use>
+              </svg></a></li>
+          <li><a aria-label="instagram" href="#"><svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-instagram"></use>
+              </svg></a></li>
         </ul>
       </div>
-      <div>
-        <ul role="list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
+
+      <div class="footer-links">
+        <div>
+          <ul role="list" class="flow">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul role="list" class="flow">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul role="list">
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div>
+
+      <div class="footer-form">
         <form action="#">
-          <input type="email" placeholder="Updates in your inbox…">
-          <button type="submit">Go</button>
-          <p>Copyright 2020. All Rights Reserved</p>
+          <div class="form-inner-div">
+            <input class="form-input" type="email" placeholder="Updates in your inbox…">
+            <button class="btn-go" type="submit">Go</button>
+          </div>
         </form>
+        <div class="copyright">Copyright 2020. All Rights Reserved</div>
       </div>
     </div>
   </footer>
