@@ -3,6 +3,7 @@
 
 body {
     font-family: var(--ff-body);
+    counter-reset: count;
 }
 
 ul li a {
@@ -27,6 +28,12 @@ ul li a {
     max-width: 32ch;
 }
 
+@media (max-width: 400px) {
+    .text {
+        font-size: 10px;
+    }
+}
+
 .text[data-width="wide"] {
     max-width: 85%;
 }
@@ -40,6 +47,52 @@ ul li a {
 
 .about {
     padding: 50px 0;
+}
+
+.accordion {
+    padding: 50px 0;
+}
+
+.accordion-item {
+    background-color: var(--red-shadow);
+}
+
+.question {
+    background-color: var(--bright-red);
+    color: var(--very-light-gray);
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.answer {
+    color: black;
+    padding: 15px 30px;
+    display: none;
+}
+
+.accordion-item svg {
+    transform: rotate(0deg);
+    transition: all .3s ease-in;
+}
+
+.active svg {
+    transform: rotate(180deg);
+    transition: all .3s ease-in;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .accordion-item h4 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .accordion-item {
+        font-size: 12px;
+    }
 }
 
 .testimonials {
@@ -66,13 +119,6 @@ ul li a {
     background-position: 455px -170px;
 }
 
-@media (max-width: 900px) {
-    .get-started::before {
-        background-image: url("/images/bg-simplify-section-mobile.svg");
-        background-position: 0 0;
-    }
-}
-
 .simplify {
     display: flex;
     align-items: center;
@@ -80,6 +126,11 @@ ul li a {
 }
 
 @media (max-width: 900px) {
+    .get-started::before {
+        background-image: url("/images/bg-simplify-section-mobile.svg");
+        background-position: 0 0;
+    }
+
     .simplify {
         flex-direction: column;
     }
@@ -181,6 +232,46 @@ ul li a {
 }
 
 
+/********** NUMBERS **********/
+
+.number {
+    background-color: var(--bright-red);
+    color: var(--very-light-gray);
+    font-weight: 500;
+    padding: 5px 18px;
+    border-radius: 50px;
+}
+
+@media (max-width: 900px) {
+    .number {
+        display: none;
+    }
+
+    .number-title {
+        background-color: var(--red-shadow);
+        box-shadow: 5em 0 0 0 var(--red-shadow);
+        padding: 4px 4px 4px 0;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        counter-increment: count;
+    }
+
+    .number-title::before {
+        content: "0" counter(count);
+        font-weight: 500;
+        padding: 5px 20px;
+        margin-right: 1rem;
+        border-radius: 50px;
+        background-color: var(--bright-red);
+        color: var(--very-light-gray);
+    }
+}
+
+@media (max-width: 400px) {
+    .number-title {
+        font-size: 12px;
+    }
+}
 
 /********** FOOTER **********/
 

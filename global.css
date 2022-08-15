@@ -1,5 +1,6 @@
 :root {
   --bright-red: hsl(12, 88%, 59%);
+  --red-shadow: hsla(12 88% 59% / 10%);
   --dark-blue: hsl(228, 39%, 23%);
   --dark-grayish-blue: hsl(227, 12%, 61%);
   --very-dark-blue: hsl(233, 12%, 13%);
@@ -23,7 +24,7 @@
   /* 15px */
   --fs-3: 0.9375rem;
   /* 16px */
-  --fs-4: 1rem;
+  --fs-4: 1.25rem;
   /* 32px */
   --fs-5: 1.875rem;
   /* 40px */
