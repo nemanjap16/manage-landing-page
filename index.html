@@ -1,247 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=Lato:wght@100;300;400;700;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merienda&display=swap"
+      rel="stylesheet"
+    />
+    <title>Manage Landing Page</title>
+    <link rel="stylesheet" href="global.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=Lato:wght@100;300;400;700;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merienda&display=swap"
-    rel="stylesheet">
-  <title>Manage Landing Page</title>
-  <link rel="stylesheet" href="global.css">
-
-
-</head>
-
-<body>
-  <header class="header">
-    <div class="container flex-wrap justify-between align-center">
-      <a href="#"><img src="/images/logo.svg" alt="Manage Agency"></a>
-      <button class="mobile-nav-button" aria-controls="primary-nav" aria-expanded="false">
-        <img class="hamburger" src="/images/icon-hamburger.svg" alt="Hamburger menu">
-        <!-- <img class="hamburger-close d-none" src="/images/icon-close.svg" alt="Close hamburger"> -->
-        <span class="visually-hidden">Menu</span>
-      </button>
-      <nav class="primary-nav" id="primary-nav">
-        <ul role="list" class="nav-items">
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Community</a></li>
-        </ul>
-      </nav>
-      <button class="btn cta-nav" data-type="bright-red">Get Started</button>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="flex container justify-between">
-        <div class="w-50 flow-1">
-          <h1 class="title fs-6">Bring everyone together to build better products.</h1>
-          <p class="text">Manage makes it simple for software teams to plan day-to-day plans while keeping the larger
-            team goals in
-            view.</p>
-          <button class="btn" data-type="bright-red">Get Started</button>
-        </div>
-        <div class="w-50">
-          <img src="/images/illustration-intro.svg" alt="illustration">
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="flex container justify-between">
-        <div class="w-50 flow-1">
-          <h2 class="title fs-5">What’s different about Manage?</h2>
-          <p class="text">Manage provides all the functionality your team needs, without
-            the complexity. Our software is tailor-made for modern digital
-            product teams..</p>
-        </div>
-        <div class="flex-column w-50 flow-2">
-          <div class="flex align-base gap-1">
-            <div class="number">01</div>
-            <div class="flow">
-              <h3 class="number-title title">Track company-wide progress</h3>
-              <p class="text" data-width="wide">
-                See how your day-to-day tasks fit into the wider vision. Go from
-                tracking progress at the milestone level all the way done to the
-                smallest of details. Never lose sight of the bigger picture again.
-              </p>
-            </div>
-          </div>
-          <div class="flex align-base gap-1">
-            <div class="number">02</div>
-            <div class="flow">
-              <h3 class="number-title title">Advanced built-in reports</h3>
-              <p class="text" data-width="wide">
-                Set internal delivery estimates and track progress toward company
-                goals. Our customizable dashboard helps you build out the reports
-                you need to keep key stakeholders informed.
-              </p>
-            </div>
-          </div>
-          <div class="flex align-base gap-1">
-            <div class="number">03</div>
-            <div class="flow">
-              <h3 class="number-title title">Everything you need in one place</h3>
-              <p class="text" data-width="wide">
-                Stop jumping from one service to another to communicate, store files,
-                track tasks and share documents. Manage offers an all-in-one team
-                productivity solution.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="testimonials">
-      <div class="container flex-column align-center">
-        <h2>What they’ve said</h2>
-        <!-- carousel -->
-        <button class="btn" data-type="bright-red">Get Started</button>
-      </div>
-    </section>
-    <section class="accordion">
-      <div class="container flex-column align-center flow">
-        <h3 class="title fs-5 mb-4">FAQ</h3>
-
-        <div class="accordion-item flex-column w-75">
-          <div class="question flex justify-between align-center">
-            <h4 class="fs-4">How many members can I invite?</h4>
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-              class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-            </svg>
-          </div>
-          <div class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui nisi magni impedit, laboriosam sunt earum,
-            quis ratione culpa magnam eos recusandae officiis inventore voluptates assumenda exercitationem corrupti
-            similique eius non rerum veritatis ab quo quod. Quas est in tempora!
-          </div>
-        </div>
-
-        <div class="accordion-item flex-column w-75">
-          <div class="question flex justify-between align-center">
-            <h4 class="fs-4">What is the maximum upload size?</h4>
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-              class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-            </svg>
-          </div>
-          <div class="answer">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, possimus. Veniam labore accusantium
-            quisquam architecto, nostrum autem aliquid temporibus vel possimus rerum iusto eius cumque eligendi totam
-            delectus nisi modi sint excepturi, error earum. Recusandae laudantium fugiat facere ducimus corporis!
-          </div>
-        </div>
-
-        <div class="accordion-item flex-column w-75">
-          <div class="question flex justify-between align-center">
-            <h4 class="fs-4">How many project can I have in CMS plan?</h4>
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-              class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-            </svg>
-          </div>
-          <div class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tenetur excepturi officiis quae
-            blanditiis ab explicabo est accusantium delectus modi expedita ut dolore asperiores et, eius cum, culpa
-            minus provident? Earum necessitatibus minima unde impedit voluptatum optio, aut asperiores ab!
-          </div>
-        </div>
-
-        <div class="accordion-item flex-column w-75">
-          <div class="question flex justify-between align-center">
-            <h4 class="fs-4">What if I need to change plan in order to get more flexibility?</h4>
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-              class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-            </svg>
-          </div>
-          <div class="answer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas odit enim cumque. Hic impedit
-            exercitationem, nesciunt debitis dignissimos blanditiis totam rerum quia nemo nam earum voluptates esse
-            tempore ullam soluta harum in nihil omnis. Animi dicta alias in totam.
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="get-started  bg-bright-red">
-      <div class="container simplify">
-        <div class="">
-          <p class="subtitle text-w-10 fs-5">Simplify how your team works today.</p>
-        </div>
-        <div class="flex align-center">
-          <button class="btn simplify-btn" data-type="white">Get Started</button>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer bg-very-dark-blue very-light-gray">
-    <div class="container footer-nav">
-      <div class="footer-logo">
-        <div>
-          <a href="#" aria-label="home">
-            <svg class="manage-icon" width="146" height="24">
-              <use xlink:href="/images/manage-logo.svg#manage-logo"></use>
-            </svg>
-          </a>
-        </div>
-        <ul class="flex" role="list" data-list="social-networks" aria-label="social links">
-          <li><a aria-label="facebook" href="#"><svg class="social-icon">
-                <use xlink:href="/images/social-icons.svg#icon-facebook"></use>
-              </svg></a></li>
-          <li><a aria-label="youtube" href="#"><svg class="social-icon">
-                <use xlink:href="/images/social-icons.svg#icon-youtube"></use>
-              </svg></a></li>
-          <li><a aria-label="twitter" href="#"><svg class="social-icon">
-                <use xlink:href="/images/social-icons.svg#icon-twitter"></use>
-              </svg></a></li>
-          <li><a aria-label="pinterest" href="#"><svg class="social-icon">
-                <use xlink:href="/images/social-icons.svg#icon-pinterest"></use>
-              </svg></a></li>
-          <li><a aria-label="instagram" href="#"><svg class="social-icon">
-                <use xlink:href="/images/social-icons.svg#icon-instagram"></use>
-              </svg></a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <div>
-          <ul role="list" class="flow">
-            <li><a href="#">Home</a></li>
+  <body>
+    <header class="header">
+      <div class="container flex-wrap justify-between align-center">
+        <a href="#"><img src="/images/logo.svg" alt="Manage Agency" /></a>
+        <button
+          class="mobile-nav-button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <img
+            class="hamburger"
+            src="/images/icon-hamburger.svg"
+            alt="Hamburger menu"
+          />
+          <!-- <img class="hamburger-close d-none" src="/images/icon-close.svg" alt="Close hamburger"> -->
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="primary-nav" id="primary-nav">
+          <ul role="list" class="nav-items">
             <li><a href="#">Pricing</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="#">Product</a></li>
             <li><a href="#">About Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul role="list" class="flow">
             <li><a href="#">Careers</a></li>
             <li><a href="#">Community</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <button class="btn cta-nav" data-type="bright-red">Get Started</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="flex container justify-between">
+          <div class="w-50 flow-1">
+            <h1 class="title fs-6">
+              Bring everyone together to build better products.
+            </h1>
+            <p class="text">
+              Manage makes it simple for software teams to plan day-to-day plans
+              while keeping the larger team goals in view.
+            </p>
+            <button class="btn" data-type="bright-red">Get Started</button>
+          </div>
+          <div class="w-50">
+            <img src="/images/illustration-intro.svg" alt="illustration" />
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="flex container justify-between">
+          <div class="w-50 flow-1">
+            <h2 class="title fs-5">What’s different about Manage?</h2>
+            <p class="text">
+              Manage provides all the functionality your team needs, without the
+              complexity. Our software is tailor-made for modern digital product
+              teams..
+            </p>
+          </div>
+          <div class="flex-column w-50 flow-2">
+            <div class="flex align-base gap-1">
+              <div class="number">01</div>
+              <div class="flow">
+                <h3 class="number-title title">Track company-wide progress</h3>
+                <p class="text" data-width="wide">
+                  See how your day-to-day tasks fit into the wider vision. Go
+                  from tracking progress at the milestone level all the way done
+                  to the smallest of details. Never lose sight of the bigger
+                  picture again.
+                </p>
+              </div>
+            </div>
+            <div class="flex align-base gap-1">
+              <div class="number">02</div>
+              <div class="flow">
+                <h3 class="number-title title">Advanced built-in reports</h3>
+                <p class="text" data-width="wide">
+                  Set internal delivery estimates and track progress toward
+                  company goals. Our customizable dashboard helps you build out
+                  the reports you need to keep key stakeholders informed.
+                </p>
+              </div>
+            </div>
+            <div class="flex align-base gap-1">
+              <div class="number">03</div>
+              <div class="flow">
+                <h3 class="number-title title">
+                  Everything you need in one place
+                </h3>
+                <p class="text" data-width="wide">
+                  Stop jumping from one service to another to communicate, store
+                  files, track tasks and share documents. Manage offers an
+                  all-in-one team productivity solution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="container flex-column align-center">
+          <h2 class="title fs-5 mb-6">What they’ve said</h2>
+          <!-- CAROUSEL -->
+          <div class="container carousel-wrapper">
+            <div class="carousel" data-slideContainer>
+              <div class="slide" data-slide>
+                <img src="images/avatar-anisha.png" alt="" />
+                <h4 class="title mb-1">Anisha Li</h4>
+                <p class="very-dark-blue">
+                  “Manage has supercharged our team’s workflow. The ability to
+                  maintain visibility on larger milestones at all times keeps
+                  everyone motivated.”
+                </p>
+              </div>
+              <div class="slide" data-slide>
+                <img src="images/avatar-ali.png" alt="" />
+                <h4 class="title mb-1">Ali Bravo</h4>
+                <p class="very-dark-blue">
+                  “We have been able to cancel so many other subscriptions since
+                  using Manage. There is no more cross-channel confusion and
+                  everyone is much more focused.”
+                </p>
+              </div>
+              <div class="slide" data-slide>
+                <img src="images/avatar-richard.png" alt="" />
+                <h4 class="title mb-1">Richard Watts</h4>
+                <p class="very-dark-blue">
+                  “Manage allows us to provide structure and process. It keeps
+                  us organized and focused. I can’t stop recommending them to
+                  everyone I talk to!”
+                </p>
+              </div>
+              <div class="slide" data-slide>
+                <img src="images/avatar-shanai.png" alt="" />
+                <h4 class="title mb-1">Shanai Gough</h4>
+                <p class="very-dark-blue">
+                  “Their software allows us to track, manage and collaborate on
+                  our projects from anywhere. It keeps the whole team in-sync
+                  without being intrusive.”
+                </p>
+              </div>
+            </div>
+            <div class="carousel-buttons">
+              <button
+                data-slideBtn
+                id="prev"
+                aria-label="Show Previous Slide"
+                disabled
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="svg-icon bright-red"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <polyline
+                    points="160 208 80 128 160 48"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></polyline>
+                </svg>
+              </button>
+              <button data-slideBtn id="next" aria-label="Show Next Slide">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="svg-icon bright-red"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <polyline
+                    points="96 48 176 128 96 208"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- END OF CAROUSEL -->
+        </div>
+        <button class="btn" data-type="bright-red">Get Started</button>
+      </section>
+      <section class="accordion">
+        <div class="container flex-column align-center flow">
+          <h3 class="title fs-5 mb-4">FAQ</h3>
+
+          <div class="accordion-item flex-column w-75">
+            <div class="question flex justify-between align-center">
+              <h4 class="fs-4">How many members can I invite?</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <div class="answer">
+              “Manage has supercharged our team’s workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.”
+            </div>
+          </div>
+
+          <div class="accordion-item flex-column w-75">
+            <div class="question flex justify-between align-center">
+              <h4 class="fs-4">What is the maximum upload size?</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <div class="answer">
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </div>
+          </div>
+
+          <div class="accordion-item flex-column w-75">
+            <div class="question flex justify-between align-center">
+              <h4 class="fs-4">How many project can I have in CMS plan?</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <div class="answer">
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </div>
+          </div>
+
+          <div class="accordion-item flex-column w-75">
+            <div class="question flex justify-between align-center">
+              <h4 class="fs-4">
+                What if I need to change plan in order to get more flexibility?
+              </h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <div class="answer">
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="get-started bg-bright-red">
+        <div class="container simplify">
+          <div class="">
+            <p class="subtitle text-w-10 fs-5">
+              Simplify how your team works today.
+            </p>
+          </div>
+          <div class="flex align-center">
+            <button class="btn simplify-btn" data-type="white">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-very-dark-blue very-light-gray">
+      <div class="container footer-nav">
+        <div class="footer-logo">
+          <div>
+            <a href="#" aria-label="home">
+              <svg class="manage-icon" width="146" height="24">
+                <use xlink:href="/images/manage-logo.svg#manage-logo"></use>
+              </svg>
+            </a>
+          </div>
+          <ul
+            class="flex"
+            role="list"
+            data-list="social-networks"
+            aria-label="social links"
+          >
+            <li>
+              <a aria-label="facebook" href="#"
+                ><svg class="social-icon">
+                  <use
+                    xlink:href="/images/social-icons.svg#icon-facebook"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a aria-label="youtube" href="#"
+                ><svg class="social-icon">
+                  <use
+                    xlink:href="/images/social-icons.svg#icon-youtube"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a aria-label="twitter" href="#"
+                ><svg class="social-icon">
+                  <use
+                    xlink:href="/images/social-icons.svg#icon-twitter"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a aria-label="pinterest" href="#"
+                ><svg class="social-icon">
+                  <use
+                    xlink:href="/images/social-icons.svg#icon-pinterest"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a aria-label="instagram" href="#"
+                ><svg class="social-icon">
+                  <use
+                    xlink:href="/images/social-icons.svg#icon-instagram"
+                  ></use></svg
+              ></a>
+            </li>
           </ul>
         </div>
-      </div>
-      <div class="footer-form">
-        <form action="#">
-          <div class="form-inner-div">
-            <input class="form-input" type="email" placeholder="Updates in your inbox…">
-            <button class="btn-go" type="submit">Go</button>
+        <div class="footer-links">
+          <div>
+            <ul role="list" class="flow">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
           </div>
-        </form>
-        <div class="copyright">Copyright 2020. All Rights Reserved</div>
+          <div>
+            <ul role="list" class="flow">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-form">
+          <form action="#">
+            <div class="form-inner-div">
+              <input
+                class="form-input"
+                type="email"
+                placeholder="Updates in your inbox…"
+              />
+              <button class="btn-go" type="submit">Go</button>
+            </div>
+          </form>
+          <div class="copyright">Copyright 2020. All Rights Reserved</div>
+        </div>
       </div>
-    </div>
-  </footer>
-  <script type="module" src="/main.js"></script>
-</body>
-
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

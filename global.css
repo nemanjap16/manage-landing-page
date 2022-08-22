@@ -7,7 +7,7 @@
   --very-pale-red: hsl(13, 100%, 96%);
   --very-light-gray: hsl(0, 0%, 98%);
 
-  --primary-font: 'Be Vietnam Pro', sans-serif;
+  --primary-font: "Be Vietnam Pro", sans-serif;
 
   --ff-body: var(--primary-font);
   --ff-heading: var(--primary-font);
@@ -15,7 +15,6 @@
   --fw-400: 400;
   --fw-500: 500;
   --fw-700: 700;
-
 
   /* 13px */
   --fs-1: 0.8125rem;
@@ -42,7 +41,6 @@
     --fs-body: var(--fs-5);
   }
 }
-
 
 /* Box sizing rules */
 *,

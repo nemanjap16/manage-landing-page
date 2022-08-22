@@ -1,55 +1,55 @@
 .btn {
-    cursor: pointer;
-    appearance: none;
-    border: none;
-    outline: none;
-    padding: 12px 22px;
-    border-radius: 36px;
-    width: max-content;
-    font-weight: var(--fw-500);
-    font-size: var(--fs-2);
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  /* outline: none; */
+  padding: 12px 22px;
+  border-radius: 36px;
+  width: max-content;
+  font-weight: var(--fw-500);
+  font-size: var(--fs-2);
 }
 
 button[data-type="white"] {
-    background-color: var(--very-light-gray);
-    color: var(--bright-red);
-    box-shadow: 0 1.2em 1em -1em hsl(0, 84%, 57%);
+  background-color: var(--very-light-gray);
+  color: var(--bright-red);
+  box-shadow: 0 1.2em 1em -1em hsl(0, 84%, 57%);
 }
 
 button[data-type="white"]:hover,
 button[data-type="white"]:focus-visible {
-    background-color: hsla(0 0% 98% / 90%);
+  background-color: hsla(0 0% 98% / 90%);
 }
 
 button[data-type="bright-red"] {
-    background-color: var(--bright-red);
-    color: var(--very-light-gray);
-    box-shadow: 0 1.2em 1em -1em var(--bright-red);
+  background-color: var(--bright-red);
+  color: var(--very-light-gray);
+  box-shadow: 0 1.2em 1em -1em var(--bright-red);
 }
 
 button[data-type="bright-red"]:hover,
 button[data-type="bright-red"]:focus-visible {
-    background-color: hsla(12 88% 59% / 80%);
+  background-color: hsla(12 88% 59% / 80%);
 }
 
 .simplify-btn {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 900px) {
-    .simplify-btn {
-        margin-left: 0;
-        margin-top: 30px;
-    }
+  .simplify-btn {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 .btn-go {
-    cursor: pointer;
-    appearance: none;
-    border: none;
-    outline: none;
-    background-color: var(--bright-red);
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 36px;
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: var(--bright-red);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 36px;
 }

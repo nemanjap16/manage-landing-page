@@ -1,0 +1,92 @@
+.carousel-wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0 0 0;
+  margin-bottom: 80px;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+  transition: all 500ms ease;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 auto;
+  max-width: 32%;
+  min-height: 200px;
+  list-style: none;
+  text-align: center;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 7px;
+  padding: 60px 30px 30px;
+}
+
+@media (max-width: 800px) {
+  .slide {
+    max-width: 49%;
+    /* margin-left: 11px; */
+  }
+}
+
+@media (max-width: 500px) {
+  .slide {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+}
+
+.slide img {
+  width: 70px;
+  position: absolute;
+  top: -35px;
+  left: calc(50% - 35px);
+  transform: translate();
+}
+
+.carousel-buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.carousel-buttons button {
+  /* outline: none; */
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.carousel-buttons button:hover {
+  border: 1px solid red;
+}
+
+.carousel-buttons button:disabled {
+  opacity: 0.5;
+}
+
+.svg-icon {
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .slider > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider > * {
+    width: 33.3333%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slider > * {
+    width: 25%;
+  }
+}
