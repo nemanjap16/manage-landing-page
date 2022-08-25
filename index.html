@@ -16,7 +16,7 @@
 
   <body>
     <header class="header">
-      <div class="container flex-wrap justify-between align-center">
+      <div class="container | flex-wrap justify-between align-center">
         <a href="#"><img src="/images/logo.svg" alt="Manage Agency" /></a>
         <button
           class="mobile-nav-button"
@@ -28,7 +28,6 @@
             src="/images/icon-hamburger.svg"
             alt="Hamburger menu"
           />
-          <!-- <img class="hamburger-close d-none" src="/images/icon-close.svg" alt="Close hamburger"> -->
           <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-nav" id="primary-nav">
@@ -45,27 +44,27 @@
     </header>
     <main>
       <section class="hero">
-        <div class="flex container justify-between">
-          <div class="w-50 flow-1">
+        <div class="container | flex justify-between">
+          <div class="hero-text | w-50 flow-1">
             <h1 class="title fs-6">
               Bring everyone together to build better products.
             </h1>
-            <p class="text">
+            <p class="text mx-text-auto">
               Manage makes it simple for software teams to plan day-to-day plans
               while keeping the larger team goals in view.
             </p>
             <button class="btn" data-type="bright-red">Get Started</button>
           </div>
-          <div class="w-50">
+          <div class="hero-img |">
             <img src="/images/illustration-intro.svg" alt="illustration" />
           </div>
         </div>
       </section>
       <section class="about">
-        <div class="flex container justify-between">
-          <div class="w-50 flow-1">
+        <div class="container | flex justify-between">
+          <div class="about-text | w-50 flow-1">
             <h2 class="title fs-5">What’s different about Manage?</h2>
-            <p class="text">
+            <p class="text mx-text-auto mb-4">
               Manage provides all the functionality your team needs, without the
               complexity. Our software is tailor-made for modern digital product
               teams..
@@ -112,10 +111,10 @@
         </div>
       </section>
       <section class="testimonials">
-        <div class="container flex-column align-center">
+        <div class="container | flex-column align-center">
           <h2 class="title fs-5 mb-6">What they’ve said</h2>
           <!-- CAROUSEL -->
-          <div class="container carousel-wrapper">
+          <div class="container | carousel-wrapper">
             <div class="carousel" data-slideContainer>
               <div class="slide" data-slide>
                 <img src="images/avatar-anisha.png" alt="" />
@@ -206,111 +205,8 @@
         </div>
         <button class="btn" data-type="bright-red">Get Started</button>
       </section>
-      <section class="accordion">
-        <div class="container flex-column align-center flow">
-          <h3 class="title fs-5 mb-4">FAQ</h3>
-
-          <div class="accordion-item flex-column w-75">
-            <div class="question flex justify-between align-center">
-              <h4 class="fs-4">How many members can I invite?</h4>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="currentColor"
-                class="bi bi-chevron-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </div>
-            <div class="answer">
-              “Manage has supercharged our team’s workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
-            </div>
-          </div>
-
-          <div class="accordion-item flex-column w-75">
-            <div class="question flex justify-between align-center">
-              <h4 class="fs-4">What is the maximum upload size?</h4>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="currentColor"
-                class="bi bi-chevron-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </div>
-            <div class="answer">
-              See how your day-to-day tasks fit into the wider vision. Go from
-              tracking progress at the milestone level all the way done to the
-              smallest of details. Never lose sight of the bigger picture again.
-            </div>
-          </div>
-
-          <div class="accordion-item flex-column w-75">
-            <div class="question flex justify-between align-center">
-              <h4 class="fs-4">How many project can I have in CMS plan?</h4>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="currentColor"
-                class="bi bi-chevron-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </div>
-            <div class="answer">
-              See how your day-to-day tasks fit into the wider vision. Go from
-              tracking progress at the milestone level all the way done to the
-              smallest of details. Never lose sight of the bigger picture again.
-            </div>
-          </div>
-
-          <div class="accordion-item flex-column w-75">
-            <div class="question flex justify-between align-center">
-              <h4 class="fs-4">
-                What if I need to change plan in order to get more flexibility?
-              </h4>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="currentColor"
-                class="bi bi-chevron-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </div>
-            <div class="answer">
-              See how your day-to-day tasks fit into the wider vision. Go from
-              tracking progress at the milestone level all the way done to the
-              smallest of details. Never lose sight of the bigger picture again.
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="get-started bg-bright-red">
-        <div class="container simplify">
+        <div class="container | simplify">
           <div class="">
             <p class="subtitle text-w-10 fs-5">
               Simplify how your team works today.
@@ -324,8 +220,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer bg-very-dark-blue very-light-gray">
-      <div class="container footer-nav">
+    <footer class="footer | bg-very-dark-blue very-light-gray">
+      <div class="container | footer-nav">
         <div class="footer-logo">
           <div>
             <a href="#" aria-label="home">
@@ -345,40 +241,41 @@
                 ><svg class="social-icon">
                   <use
                     xlink:href="/images/social-icons.svg#icon-facebook"
-                  ></use></svg
-              ></a>
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a aria-label="youtube" href="#"
                 ><svg class="social-icon">
-                  <use
-                    xlink:href="/images/social-icons.svg#icon-youtube"
-                  ></use></svg
-              ></a>
+                  <use xlink:href="/images/social-icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a aria-label="twitter" href="#"
                 ><svg class="social-icon">
-                  <use
-                    xlink:href="/images/social-icons.svg#icon-twitter"
-                  ></use></svg
-              ></a>
+                  <use xlink:href="/images/social-icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a aria-label="pinterest" href="#"
                 ><svg class="social-icon">
                   <use
                     xlink:href="/images/social-icons.svg#icon-pinterest"
-                  ></use></svg
-              ></a>
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a aria-label="instagram" href="#"
                 ><svg class="social-icon">
                   <use
                     xlink:href="/images/social-icons.svg#icon-instagram"
-                  ></use></svg
-              ></a>
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

@@ -146,9 +146,9 @@
   line-height: 1.2;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 400px) {
   .fs-5 {
-    line-height: inherit;
+    font-size: 22px;
   }
 }
 
@@ -157,9 +157,9 @@
   line-height: 1.2;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 400px) {
   .fs-6 {
-    line-height: inherit;
+    font-size: 30px;
   }
 }
 
@@ -226,7 +226,7 @@
   }
 }
 
-.m-auto {
+.mx-auto {
   margin-inline: auto;
 }
 
@@ -269,7 +269,19 @@
 }
 
 .gap-2 {
-  gap: 1rem;
+  gap: 20px;
+}
+
+.gap-3 {
+  gap: 30px;
+}
+
+.gap-4 {
+  gap: 40px;
+}
+
+.gap-5 {
+  gap: 50px;
 }
 
 /********** BLOCK FLOW **********/
@@ -299,3 +311,13 @@
 /* :where(.flow > :not(:first-child)) {
     margin-top: 1rem;
 } */
+
+/********** POSITION **********/
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
