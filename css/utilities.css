@@ -61,12 +61,6 @@
   display: none;
 }
 
-@media (min-width: 1110px) {
-  .container {
-    padding-inline: 0;
-  }
-}
-
 .flex {
   display: flex;
 }
